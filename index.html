@@ -1,0 +1,1149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sajjad Hussain — Junior Laravel Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Sajjad Hussain, a Junior Laravel Developer building modern, responsive and user-focused web applications with PHP, Laravel and MySQL."
+    />
+    <meta name="theme-color" content="#101010" />
+    <meta
+      property="og:title"
+      content="Sajjad Hussain — Junior Laravel Developer"
+    />
+    <meta
+      property="og:description"
+      content="I build modern, responsive, and user-focused web applications with clean code and practical functionality."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ============ PAGE LOADER ============ -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <span class="loader__brand">SAJJAD.</span>
+        <span class="loader__count"><span id="loaderCount">0</span>%</span>
+      </div>
+      <div class="loader__bar"><span id="loaderBar"></span></div>
+    </div>
+
+    <!-- ============ CUSTOM CURSOR (desktop only, enabled by JS) ============ -->
+    <div class="cursor" aria-hidden="true">
+      <span class="cursor__dot"></span>
+      <span class="cursor__ring"></span>
+    </div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#home" class="nav__brand" aria-label="Sajjad — back to top"
+          >SAJJAD<span>.</span></a
+        >
+
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#home" class="nav__link"><span>Home</span></a>
+          <a href="#about" class="nav__link"><span>About</span></a>
+          <a href="#skills" class="nav__link"><span>Skills</span></a>
+          <a href="#projects" class="nav__link"><span>Projects</span></a>
+          <a href="#services" class="nav__link"><span>Services</span></a>
+          <a href="#contact" class="nav__link"><span>Contact</span></a>
+        </nav>
+
+        <div class="nav__actions">
+          <a
+            href="files/Sajjad-Hussain-CV.pdf"
+            class="btn btn--small btn--outline nav__resume"
+            download
+            data-magnetic
+            >Resume</a
+          >
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="menu" id="mobileMenu" aria-hidden="true">
+      <nav class="menu__inner" aria-label="Mobile">
+        <a href="#home" class="menu__link"><small>01</small>Home</a>
+        <a href="#about" class="menu__link"><small>02</small>About</a>
+        <a href="#skills" class="menu__link"><small>03</small>Skills</a>
+        <a href="#projects" class="menu__link"><small>04</small>Projects</a>
+        <a href="#services" class="menu__link"><small>05</small>Services</a>
+        <a href="#contact" class="menu__link"><small>06</small>Contact</a>
+        <a
+          href="files/Sajjad-Hussain-CV.pdf"
+          class="btn btn--accent menu__cta"
+          download
+          >Download Resume</a
+        >
+      </nav>
+    </div>
+
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="home" aria-label="Introduction">
+        <div class="hero__bg" aria-hidden="true">
+          <span class="blob blob--a" data-parallax="-80"></span>
+          <span class="blob blob--b" data-parallax="60"></span>
+          <span class="hero__grid"></span>
+        </div>
+
+        <div class="container hero__layout">
+          <div class="hero__content">
+            <p class="hero__hello" data-hero="line">
+              <span class="dash"></span>HELLO, I'M.
+            </p>
+            <h1 class="hero__name" aria-label="Sajjad Hussain">
+              <span class="line"
+                ><span class="line__inner" data-hero="name">SAJJAD</span></span
+              >
+              <span class="line"
+                ><span class="line__inner" data-hero="name"
+                  >HUSSAIN<em>.</em></span
+                ></span
+              >
+            </h1>
+            <h2 class="hero__headline" data-hero="line">
+              Building Digital Experiences
+              <span class="accent">That Matter.</span>
+            </h2>
+            <p class="hero__role" data-hero="line">
+              <span class="pill">Junior Laravel Developer</span>
+            </p>
+            <p class="hero__intro" data-hero="line">
+              I build modern, responsive, and user-focused web applications with
+              clean code and practical functionality.
+            </p>
+
+            <div class="hero__cta" data-hero="line">
+              <a href="#projects" class="btn btn--accent" data-magnetic
+                >View My Work
+                <i data-lucide="arrow-down-right" aria-hidden="true"></i
+              ></a>
+              <a
+                href="files/Sajjad-Hussain-CV.pdf"
+                class="btn btn--outline"
+                download
+                data-magnetic
+                >Download CV <i data-lucide="download" aria-hidden="true"></i
+              ></a>
+            </div>
+
+            <p class="status" data-hero="line">
+              <span class="status__dot" aria-hidden="true"></span> Available for
+              junior roles &amp; freelance projects
+            </p>
+          </div>
+
+          <figure class="hero__visual">
+            <div class="hero__frame" data-hero="image">
+              <img
+                src="images/portrait.jpeg"
+                alt="Illustrated portrait of Sajjad Hussain, Junior Laravel Developer"
+                width="800"
+                height="1000"
+                fetchpriority="high"
+                decoding="async"
+                data-hero="image-inner"
+              />
+            </div>
+            <span class="hero__tag hero__tag--a" data-hero="tag"
+              >PHP · Laravel</span
+            >
+            <span class="hero__tag hero__tag--b" data-hero="tag">MySQL</span>
+          </figure>
+        </div>
+
+        <a
+          href="#about"
+          class="scroll-cue"
+          aria-label="Scroll to About section"
+        >
+          <span class="scroll-cue__text">Scroll</span>
+          <span class="scroll-cue__line"></span>
+        </a>
+      </section>
+
+      <!-- ============ MARQUEE ============ -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track" id="marqueeTrack">
+          <div class="marquee__group">
+            <span>Laravel</span><i>✦</i><span>PHP</span><i>✦</i
+            ><span>MySQL</span><i>✦</i><span>REST APIs</span><i>✦</i
+            ><span>JavaScript</span><i>✦</i><span>Responsive Design</span
+            ><i>✦</i>
+          </div>
+          <div class="marquee__group">
+            <span>Laravel</span><i>✦</i><span>PHP</span><i>✦</i
+            ><span>MySQL</span><i>✦</i><span>REST APIs</span><i>✦</i
+            ><span>JavaScript</span><i>✦</i><span>Responsive Design</span
+            ><i>✦</i>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ ABOUT (light section) ============ -->
+      <section
+        class="section section--light about"
+        id="about"
+        aria-labelledby="aboutTitle"
+      >
+        <div class="container about__layout">
+          <div class="about__media">
+            <div class="about__frame" data-reveal-image>
+              <img
+                src="images/portraitS.jpeg"
+                alt="Portrait illustration of Sajjad Hussain"
+                width="800"
+                height="1000"
+                loading="lazy"
+                decoding="async"
+                data-parallax-img
+              />
+            </div>
+            
+          </div>
+
+          <div class="about__content">
+            <p class="eyebrow" data-fade><span class="dash"></span>ABOUT ME</p>
+            <h2 class="display" id="aboutTitle" data-split>
+              The Person Behind The Code
+            </h2>
+
+            <p class="lead" data-fade>
+              I'm Sajjad Hussain, a Junior Web Developer who enjoys turning
+              ideas into clean, working web applications.
+            </p>
+            <p data-fade>
+              My journey started with the fundamentals of the web &mdash; HTML,
+              CSS and JavaScript &mdash; and grew into PHP, MySQL and the
+              Laravel framework. I'm especially drawn to backend and full-stack
+              development: designing database structures, building MVC
+              applications, writing CRUD features and connecting everything
+              through REST APIs.
+            </p>
+            <p data-fade>
+              I care about readable code, responsive layouts and features that
+              people can actually use. Every project is a chance to learn
+              something new and to get a little better.
+            </p>
+
+            <ul class="stats" aria-label="Quick facts">
+              <li class="stat" data-fade>
+                <strong class="stat__num"
+                  ><span data-count="2">2</span><sup>+</sup></strong
+                >
+                <span class="stat__label">Featured Projects</span>
+              </li>
+              <li class="stat" data-fade>
+                <strong class="stat__num"
+                  ><span data-count="12">12</span></strong
+                >
+                <span class="stat__label">Technologies Used</span>
+              </li>
+              <li class="stat" data-fade>
+                <strong class="stat__num"><span data-count="4">4</span></strong>
+                <span class="stat__label">Skill Areas</span>
+              </li>
+            </ul>
+
+            <div data-fade>
+              <a
+                href="files/Sajjad-Hussain-CV.pdf"
+                class="btn btn--dark"
+                download
+                data-magnetic
+                >Download Resume
+                <i data-lucide="download" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section class="section skills" id="skills" aria-labelledby="skillsTitle">
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow" data-fade>
+              <span class="dash"></span>SKILLS &amp; TECHNOLOGIES
+            </p>
+            <h2 class="display" id="skillsTitle" data-split>
+              Technologies I Work With
+            </h2>
+          </header>
+
+          <div class="skills__grid">
+            <article class="skill-group skill-group--wide" data-skill-group>
+              <header class="skill-group__head">
+                <span class="skill-group__no">01</span>
+                <h3>Frontend</h3>
+              </header>
+              <ul class="skill-list">
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #e34f26">H5</span
+                  ><span class="skill__name">HTML5</span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #1572b6">C3</span
+                  ><span class="skill__name">CSS3</span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #7952b3">B</span
+                  ><span class="skill__name">Bootstrap</span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #f7df1e; --ink: #101010"
+                    >JS</span
+                  ><span class="skill__name">JavaScript</span>
+                </li>
+                <li class="skill">
+                  <span
+                    class="skill__icon"
+                    style="--c: #61dafb; --ink: #101010"
+                  >
+                    ⚛
+                  </span>
+                  <span class="skill__name">React</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="skill-group" data-skill-group>
+              <header class="skill-group__head">
+                <span class="skill-group__no">02</span>
+                <h3>Backend</h3>
+              </header>
+              <ul class="skill-list">
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #777bb4">PHP</span
+                  ><span class="skill__name">PHP</span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #ff2d20">L</span
+                  ><span class="skill__name">Laravel</span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #718777">{ }</span
+                  ><span class="skill__name">REST APIs</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="skill-group" data-skill-group>
+              <header class="skill-group__head">
+                <span class="skill-group__no">03</span>
+                <h3>Database</h3>
+              </header>
+              <ul class="skill-list">
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #00758f">SQL</span
+                  ><span class="skill__name">MySQL</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="skill-group skill-group--wide" data-skill-group>
+              <header class="skill-group__head">
+                <span class="skill-group__no">04</span>
+                <h3>Tools</h3>
+              </header>
+              <ul class="skill-list">
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #f05032">Git</span
+                  ><span class="skill__name">Git</span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #f5f3ee; --ink: #101010"
+                    >GH</span
+                  ><span class="skill__name">GitHub</span>
+                </li>
+                <li class="skill">
+                  <span class="skill__icon" style="--c: #007acc">VS</span
+                  ><span class="skill__name">VS Code</span>
+                </li>
+              </ul>
+            </article>
+          </div>
+
+          <p class="skills__note" data-fade>
+            Also: CRUD operations · MVC architecture · Responsive web design
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section
+        class="section section--alt projects"
+        id="projects"
+        aria-labelledby="projectsTitle"
+      >
+        <div class="container">
+          <header class="section__head section__head--split">
+            <div>
+              <p class="eyebrow" data-fade>
+                <span class="dash"></span>FEATURED PROJECTS
+              </p>
+              <h2 class="display" id="projectsTitle" data-split>
+                Selected Works
+              </h2>
+            </div>
+            <p class="section__sub" data-fade>
+              A few of the Laravel-powered applications I've built while
+              learning and growing as a developer. Drag, swipe or use the arrow
+              keys to browse.
+            </p>
+          </header>
+
+          <div
+            class="slider"
+            id="slider"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Featured projects"
+            tabindex="0"
+          >
+            <div class="slider__viewport" id="sliderViewport">
+              <div class="slider__track" id="sliderTrack">
+                <!-- ===== PROJECT 01 =====
+                   To add a project: copy a whole <article class="slide"> block, paste it below the last one and edit the text/image. -->
+
+                <article
+                  class="slide"
+                  aria-roledescription="slide"
+                  aria-label="Project 1"
+                >
+                  <a
+                    class="slide__media"
+                    href="https://sajjad12-14.github.io/Gym-Fitness/"
+                    data-placeholder="Add the live demo URL for Gym Fitness Website"
+                    aria-label="Open Gym Fitness Website live demo"
+                    draggable="false"
+                  >
+                    <img
+                      src="images/project-gym.PNG"
+                      alt="Gym Fitness Website — modern fitness homepage with training programs"
+                      width="1600"
+                      height="1000"
+                      decoding="async"
+                      draggable="false"
+                    />
+                    <span class="slide__view">View<br />Project</span>
+                  </a>
+
+                  <div class="slide__info">
+                    <span class="slide__no" aria-hidden="true">01</span>
+
+                    <p class="slide__cat">
+                      Web Application · HTML, CSS & JavaScript
+                    </p>
+
+                    <h3 class="slide__title">Gym Fitness Website</h3>
+
+                    <p class="slide__desc">
+                      A modern and responsive fitness website designed to
+                      showcase gym services, training programs, professional
+                      trainers and membership plans, featuring interactive
+                      elements and a premium user experience.
+                    </p>
+
+                    <ul class="features" aria-label="Key features">
+                      <li>Training Programs</li>
+                      <li>Trainer Profiles</li>
+                      <li>Membership Plans</li>
+                      <li>Contact Forms</li>
+                    </ul>
+
+                    <ul class="tags" aria-label="Technologies">
+                      <li>HTML5</li>
+                      <li>CSS3</li>
+                      <li>JavaScript</li>
+                      <li>GSAP</li>
+                      <li>Lucide Icons</li>
+                    </ul>
+
+                    <div class="slide__links">
+                      <a
+                        href="https://sajjad12-14.github.io/Gym-Fitness/"
+                        class="btn btn--accent btn--small"
+                        data-placeholder="Add the live demo URL for Gym Fitness Website"
+                        >Live Demo
+                        <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                      ></a>
+
+                      <a
+                        href="https://github.com/sajjad12-14/Gym-Fitness"
+                        class="btn btn--outline btn--small"
+                        >  <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                      >
+                        GitHub</a
+                      >
+                    </div>
+                  </div>
+                </article>
+
+                 
+            <!-- ===== PROJECT 02 ===== -->
+                  <article
+  class="slide"
+  aria-roledescription="slide"
+  aria-label="Project 2"
+>
+  <a
+    class="slide__media"
+    href="https://github.com/sajjad12-14/Online-E-book-System"
+    data-placeholder="Add the live demo URL for Online E-Book System"
+    aria-label="Open Online E-Book System live demo"
+    draggable="false"
+  >
+    <img
+      src="images/project-ebook.PNG"
+      alt="Online E-Book Management System"
+      width="1600"
+      height="1000"
+      decoding="async"
+      draggable="false"
+    />
+    <span class="slide__view">View<br />Project</span>
+  </a>
+
+  <div class="slide__info">
+    <span class="slide__no" aria-hidden="true">02</span>
+
+    <p class="slide__cat">
+      E-Commerce Web Application · Laravel
+    </p>
+
+    <h3 class="slide__title">Online E-Book System</h3>
+
+    <p class="slide__desc">
+      A dynamic online e-book platform where users can explore,
+      search, and purchase books. Includes a powerful admin panel
+      for managing books, categories, authors, inventory, and orders.
+    </p>
+
+    <ul class="features" aria-label="Key features">
+      <li>Book Management</li>
+      <li>User Authentication</li>
+      <li>Shopping Cart</li>
+      <li>Admin Dashboard</li>
+      <li>Category & Author Management</li>
+    </ul>
+
+    <ul class="tags" aria-label="Technologies">
+      <li>Laravel</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>Bootstrap 5</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <div class="slide__links">
+      <a
+        href="https://github.com/sajjad12-14/Online-E-book-System"
+        class="btn btn--accent btn--small"
+        data-placeholder="Add the live demo URL for Online E-Book System"
+      >
+        Live Demo
+        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+      </a>
+
+        <a
+          href="https://github.com/sajjad12-14/Online-E-book-System"
+        class="btn btn--outline btn--small"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+         <i data-lucide="arrow-up-right" aria-hidden="true"></i
+                      >
+        GitHub
+      </a>
+    </div>
+  </div>
+                  </article>
+
+              </div>
+            </div>
+
+            <div class="slider__controls">
+              <div class="slider__count" aria-live="polite">
+                <strong id="sliderCurrent">01</strong><span> / </span
+                ><span id="sliderTotal">02</span>
+              </div>
+              <div
+                class="slider__dots"
+                id="sliderDots"
+                role="tablist"
+                aria-label="Choose project"
+              ></div>
+              <div class="slider__arrows">
+                <button
+                  class="arrow"
+                  id="sliderPrev"
+                  type="button"
+                  aria-label="Previous project"
+                  data-magnetic
+                >
+                  <i data-lucide="arrow-left" aria-hidden="true"></i>
+                </button>
+                <button
+                  class="arrow"
+                  id="sliderNext"
+                  type="button"
+                  aria-label="Next project"
+                  data-magnetic
+                >
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES (light section) ============ -->
+      <section
+        class="section section--light services"
+        id="services"
+        aria-labelledby="servicesTitle"
+      >
+        <div class="container services__layout">
+          <header class="services__head">
+            <p class="eyebrow" data-fade><span class="dash"></span>SERVICES</p>
+            <h2 class="display" id="servicesTitle" data-split>
+              What I Can Do For You
+            </h2>
+            <p data-fade>
+              From the first database table to the final responsive polish
+              &mdash; here is where I can help.
+            </p>
+          </header>
+
+          <ul class="service-list">
+            <li class="service" data-service>
+              <span class="service__no">01</span>
+              <i
+                class="service__icon"
+                data-lucide="monitor"
+                aria-hidden="true"
+              ></i>
+              <div class="service__body">
+                <h3>Web Development</h3>
+                <p>
+                  Complete, maintainable websites and web applications built
+                  with PHP and Laravel.
+                </p>
+              </div>
+              <i
+                class="service__arrow"
+                data-lucide="arrow-up-right"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li class="service" data-service>
+              <span class="service__no">02</span>
+              <i
+                class="service__icon"
+                data-lucide="server"
+                aria-hidden="true"
+              ></i>
+              <div class="service__body">
+                <h3>Backend Development</h3>
+                <p>
+                  Authentication, business logic and clean MVC structure behind
+                  your product.
+                </p>
+              </div>
+              <i
+                class="service__arrow"
+                data-lucide="arrow-up-right"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li class="service" data-service>
+              <span class="service__no">03</span>
+              <i
+                class="service__icon"
+                data-lucide="database"
+                aria-hidden="true"
+              ></i>
+              <div class="service__body">
+                <h3>Database Management</h3>
+                <p>
+                  Well-structured MySQL schemas, relationships, migrations and
+                  queries.
+                </p>
+              </div>
+              <i
+                class="service__arrow"
+                data-lucide="arrow-up-right"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li class="service" data-service>
+              <span class="service__no">04</span>
+              <i
+                class="service__icon"
+                data-lucide="smartphone"
+                aria-hidden="true"
+              ></i>
+              <div class="service__body">
+                <h3>Responsive Website Development</h3>
+                <p>
+                  Layouts that look and work great on phones, tablets and
+                  desktops.
+                </p>
+              </div>
+              <i
+                class="service__arrow"
+                data-lucide="arrow-up-right"
+                aria-hidden="true"
+              ></i>
+            </li>
+            <li class="service" data-service>
+              <span class="service__no">05</span>
+              <i
+                class="service__icon"
+                data-lucide="plug-zap"
+                aria-hidden="true"
+              ></i>
+              <div class="service__body">
+                <h3>API Integration</h3>
+                <p>
+                  Building and connecting REST APIs so your systems can talk to
+                  each other.
+                </p>
+              </div>
+              <i
+                class="service__arrow"
+                data-lucide="arrow-up-right"
+                aria-hidden="true"
+              ></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ PROCESS ============ -->
+      <section
+        class="section process"
+        id="process"
+        aria-labelledby="processTitle"
+      >
+        <div class="container">
+          <header class="section__head">
+            <p class="eyebrow" data-fade>
+              <span class="dash"></span>DEVELOPMENT PROCESS
+            </p>
+            <h2 class="display" id="processTitle" data-split>How I Work</h2>
+          </header>
+
+          <div class="process__track" id="processTrack">
+            <div class="process__line" aria-hidden="true">
+              <span class="process__fill" id="processFill"></span>
+            </div>
+            <ol class="process__steps">
+              <li class="step" data-step>
+                <span class="step__num">01</span>
+                <h3>Understanding Requirements</h3>
+                <p>
+                  I start by listening &mdash; goals, users and features &mdash;
+                  so we build the right thing.
+                </p>
+              </li>
+              <li class="step" data-step>
+                <span class="step__num">02</span>
+                <h3>Planning &amp; Designing</h3>
+                <p>
+                  Database structure, page flow and layout are mapped out before
+                  any code is written.
+                </p>
+              </li>
+              <li class="step" data-step>
+                <span class="step__num">03</span>
+                <h3>Development &amp; Testing</h3>
+                <p>
+                  Clean Laravel code, version-controlled with Git, tested as
+                  each feature comes together.
+                </p>
+              </li>
+              <li class="step" data-step>
+                <span class="step__num">04</span>
+                <h3>Final Delivery</h3>
+                <p>
+                  A polished, responsive application handed over and ready to go
+                  live.
+                </p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section
+        class="section section--alt education"
+        id="education"
+        aria-labelledby="eduTitle"
+      >
+        <div class="container education__layout">
+          <header class="education__head">
+            <p class="eyebrow" data-fade>
+              <span class="dash"></span>EDUCATION &amp; LEARNING
+            </p>
+            <h2 class="display" id="eduTitle" data-split>
+              My Learning Journey
+            </h2>
+            <p data-fade>
+              Formal education paired with continuous, hands-on learning in web
+              development.
+            </p>
+          </header>
+
+          <div class="timeline" id="timeline">
+            <span class="timeline__line" aria-hidden="true"
+              ><span class="timeline__fill" id="timelineFill"></span
+            ></span>
+
+            <!-- Add the institution name and years inside each <p class="timeline__meta"> when you're ready. -->
+            <article class="timeline__item" data-tl>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__meta">Foundation</p>
+              <h3>Intermediate Education</h3>
+              <p>
+                Built the academic base that led me into computers and
+                technology.
+              </p>
+            </article>
+
+            <article class="timeline__item" data-tl>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__meta">Diploma</p>
+              <h3>Diploma in Information Systems Management (DISM)</h3>
+              <p>
+                Studied the principles of information systems, databases and
+                software development.
+              </p>
+            </article>
+
+            <article class="timeline__item" data-tl>
+              <span class="timeline__dot" aria-hidden="true"></span>
+              <p class="timeline__meta">Ongoing</p>
+              <h3>Continuous Learning in Web Development</h3>
+              <p>
+                Deepening my skills through real projects and practice across
+                the full web stack.
+              </p>
+              <ul class="tags">
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Laravel</li>
+                <li>Git &amp; GitHub</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ COLLABORATION ============ -->
+      <section class="section collab" id="collab" aria-labelledby="collabTitle">
+        <div class="collab__bg" aria-hidden="true">
+          <span class="collab__ring"></span
+          ><span class="collab__ring collab__ring--2"></span>
+        </div>
+        <div class="container collab__inner">
+          <p class="eyebrow eyebrow--center" data-fade>
+            <span class="dash"></span>COLLABORATION
+          </p>
+          <h2 class="collab__title" id="collabTitle" data-split>
+            Let's Build Something Meaningful
+          </h2>
+          <p class="collab__text" data-fade>
+            Have a project, an idea or an opportunity? I'm always open to
+            learning, collaborating and building useful things with great
+            people.
+          </p>
+          <a
+            href="#contact"
+            class="btn btn--dark btn--large"
+            data-magnetic
+            data-fade
+            >Start a Conversation
+            <i class="fa-solid fa-arrow-down-right" aria-hidden="true"></i
+          ></a>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section
+        class="section contact"
+        id="contact"
+        aria-labelledby="contactTitle"
+      >
+        <div class="container contact__layout">
+          <div class="contact__info">
+            <p class="eyebrow" data-fade><span class="dash"></span>CONTACT</p>
+            <h2 class="display" id="contactTitle" data-split>Let's Talk</h2>
+            <p class="lead" data-fade>
+              Tell me about your project or just say hello. I read every
+              message.
+            </p>
+
+            <ul class="contact__list" data-fade>
+              <!-- ⚠ Replace the placeholders below with your real details -->
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                  <small>Email</small
+                  ><a href="mailto:your.email@example.com"
+                    >sajjadhussaian14@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-map-pin"></i>
+                <div>
+                  <small>Location</small
+                  ><span>Open to remote &amp; local opportunities</span>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="socials" aria-label="Social links" data-fade>
+              <li>
+                <a
+                  href="https://github.com/sajjad12-14"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sajjad-hussain-b99b17443/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  data-placeholder-link
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=sajjadhussaian14@gmail.com"
+                  target="_blank"
+                  aria-label="Email"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form" id="contactForm" novalidate data-fade>
+            <div class="field">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder=" "
+                autocomplete="name"
+                required
+                aria-describedby="nameError"
+              />
+              <label for="name">Full Name</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <p class="field__error" id="nameError" role="alert"></p>
+            </div>
+            <div class="field">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder=" "
+                autocomplete="email"
+                required
+                aria-describedby="emailError"
+              />
+              <label for="email">Email Address</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <p class="field__error" id="emailError" role="alert"></p>
+            </div>
+            <div class="field">
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder=" "
+                required
+                aria-describedby="subjectError"
+              />
+              <label for="subject">Subject</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <p class="field__error" id="subjectError" role="alert"></p>
+            </div>
+            <div class="field">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder=" "
+                required
+                aria-describedby="messageError"
+              ></textarea>
+              <label for="message">Message</label>
+              <span class="field__line" aria-hidden="true"></span>
+              <p class="field__error" id="messageError" role="alert"></p>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn--accent btn--large form__submit"
+              data-magnetic
+            >
+              <span class="form__label">Submit Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+            <div
+              class="form__status"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            ></div>
+            <p class="form__note">
+              This is a front-end demo. A real backend (for example a Laravel
+              route) or an email service such as Formspree or EmailJS is
+              required to actually deliver messages.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer__glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#home" class="footer__logo">SAJJAD HUSSAIN</a>
+            <p>
+              Junior Laravel Developer crafting clean, responsive and practical
+              web applications.
+            </p>
+          </div>
+
+          <nav class="footer__nav" aria-label="Footer">
+            <a href="#home">Home</a><a href="#about">About</a
+            ><a href="#skills">Skills</a> <a href="#projects">Projects</a
+            ><a href="#services">Services</a><a href="#contact">Contact</a>
+          </nav>
+
+          <ul class="socials" aria-label="Social links" data-fade>
+              <li>
+                <a
+                  href="https://github.com/sajjad12-14"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/sajjad-hussain-b99b17443/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                  data-placeholder-link
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=sajjadhussaian14@gmail.com"
+                  target="_blank"
+                  aria-label="Email"
+                >
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+
+        <p class="footer__closing" aria-hidden="true">
+          Thanks for stopping by<span>.</span>
+        </p>
+
+        <div class="footer__bottom">
+          <p>
+            &copy; <span id="year">2026</span> Sajjad Hussain. All rights
+            reserved.
+          </p>
+          <button
+            class="to-top"
+            id="toTop"
+            type="button"
+            aria-label="Back to top"
+            data-magnetic
+          >
+            <i class="fa-solid fa-arrow-up"></i>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Libraries (CDN) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"
+      defer
+    ></script>
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
